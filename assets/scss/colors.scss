@@ -9,16 +9,16 @@ $white: rgb(255,255,255);
 $white-off: rgb(245,245,245);
 
 //// DARK MODE ////
-$primary: $black; // Primary colors
-$primary-off: $black-off; // A slightly muted version of primary
-$text: $white-off; // Applies to body text
-$text-strong: $white; // Applies to titles; text bolded with <strong>
+// $primary: $black; // Primary colors
+// $primary-off: $black-off; // A slightly muted version of primary
+// $text: $white-off; // Applies to body text
+// $text-strong: $white; // Applies to titles; text bolded with <strong>
 
-// // LIGHT MODE ////
-// $primary: $white; // Primary colors
-// $primary-off: $white-off; // A slightly muted version of primary
-// $text: $black-off; // Applies to body text
-// $text-strong: $black; // Applies to titles; text bolded with <strong>
+// LIGHT MODE ////
+$primary: $white; // Primary colors
+$primary-off: $white-off; // A slightly muted version of primary
+$text: $black-off; // Applies to body text
+$text-strong: $black; // Applies to titles; text bolded with <strong>
 
 // Semitransparent helper
 $semitransparent: #cecece10;

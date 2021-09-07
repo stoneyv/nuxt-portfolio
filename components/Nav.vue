@@ -7,7 +7,7 @@
   >
     <div class="navbar-brand">
       <NuxtLink class="navbar-item" to="/">
-        <span class="has-text-weight-boldest">Connor Rothschild</span>
+        <span class="has-text-weight-boldest">Stoney Vintson</span>
       </NuxtLink>
 
       <a
@@ -27,10 +27,24 @@
 
     <div id="navbarID" class="navbar-menu" :class="{ 'is-active': isVisible }">
       <div class="navbar-end" :class="color">
-        <NuxtLink class="navbar-item" :to="{ path: '/about' }">
-          About
-        </NuxtLink>
-        <NuxtLink class="navbar-item" :to="{ path: '/post' }"> Blog </NuxtLink>
+        <a
+          class="navbar-item"
+          href="https://www.linkedin.com/in/stoney-vintson-91970428/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a> 
+        <a
+          class="navbar-item"
+          href="https://github.com/stoneyv?tab=repositories"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Github
+        </a> 
+      </div>
+
         <!-- Have a resume hosted online somewhere? Uncomment below and add your resume link to the href! -->
         <!-- Or, change the text of 'Resume' to anything else you want to link to! (Twitter, GitHub, etc): -->
         <!-- <a

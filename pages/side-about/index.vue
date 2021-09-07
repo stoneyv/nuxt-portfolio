@@ -1,4 +1,3 @@
-
 <template>
   <div class="has-background-primary-off">
     <Nav color="has-background-primary" />
@@ -7,21 +6,13 @@
         <div class="max-width-78ch">
           <h1 class="section-title is-flex is-align-items-center">
             <img src="~/assets/images/me.jpg" class="me" />
-            <span style="margin-left: 1rem">Data Specialist</span>
+            <span style="margin-left: 1rem">About Me</span>
           </h1>
           <div class="body-transition-container">
             <p>
-              I create data pipelines, predictive models,
+              I am Stoney and I create data pipelines, predictive models,
               and reporting with high quality visualizations. 
             </p>
-          </div>
-        </div>
-        <!-- TITLE -->
-        <h2 class="section-title">Projects</h2>
-        <!-- CONTAINER FOR PROJECTS -->
-        <div class="columns is-multiline">
-          <div v-for="(post, index) in posts" :key="index" class="column is-4">
-            <BlogCard v-bind="post" background="has-background-primary" />
           </div>
         </div>
       </article>
@@ -45,7 +36,7 @@ export default {
         { x: "0%", duration: 0.1 }
       );
       TweenMax.fromTo(
-        ".columns",
+        ".body-transition-container",
         { x: "10%", autoAlpha: 0 },
         {
           x: "0%",
@@ -60,31 +51,22 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        url: `${this.$config.baseURL}/post`,
+        url: `${this.$config.baseURL}/about`,
       };
       return getSiteMeta(metaData);
     },
   },
   head() {
     return {
-      title: "Posts | Stoney Vintson",
+      title: "About | Stoney Vintson",
       meta: [...this.meta],
       link: [
         {
           hid: "canonical",
           rel: "canonical",
-          href: `${this.$config.baseURL}/post`,
+          href: `${this.$config.baseURL}/about`,
         },
       ],
-    };
-  },
-  async asyncData({ $content, params }) {
-    const posts = await $content("posts", params)
-      .sortBy("date", "desc")
-      .fetch();
-
-    return {
-      posts,
     };
   },
 };
@@ -93,9 +75,14 @@ export default {
 <style scoped>
 .me {
   max-width: 100px;
-  border-radius: 70%;
+  border-radius: 50%;
 }
+
 p {
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 </style>

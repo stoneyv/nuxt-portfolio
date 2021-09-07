@@ -54,7 +54,7 @@ export default {
   },
   head() {
     return {
-      title: "Posts | Connor Rothschild",
+      title: "Posts | Stoney Vintson",
       meta: [...this.meta],
       link: [
         {
