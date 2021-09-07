@@ -12,7 +12,7 @@ export default {
 
 	router: {
 		base: '/stoneyv.github.io/'
-	}
+	},
 
 	// Global CSS (https://go.nuxtjs.dev/config-css)
 	css: ['~assets/scss/colors.scss'],
