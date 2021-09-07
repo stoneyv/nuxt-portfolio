@@ -1,64 +1,68 @@
-const url = 'https://nuxt-blog-starter.netlify.app';
+const url = 'https://stoneyv.github.io';
 
 export default {
-	head                : {
-		htmlAttrs : { lang: 'en' },
-		meta      : [ { charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
-		link      : [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' } ]
+	head: {
+		htmlAttrs: { lang: 'en' },
+		meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
 	},
 
 	// Target (https://go.nuxtjs.dev/config-target)
-	target              : 'static',
+	target: 'static',
+
+	router: {
+		base: '/stoneyv.github.io/'
+	}
 
 	// Global CSS (https://go.nuxtjs.dev/config-css)
-	css                 : [ '~assets/scss/colors.scss' ],
+	css: ['~assets/scss/colors.scss'],
 
 	// Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-	plugins             : [ '~/plugins/v-img.js' ],
+	plugins: ['~/plugins/v-img.js'],
 	// Auto import components (https://go.nuxtjs.dev/config-components)
-	components          : true,
+	components: true,
 
 	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-	buildModules        : [ '@aceforth/nuxt-optimized-images', '@nuxtjs/pwa' ],
+	buildModules: ['@aceforth/nuxt-optimized-images', '@nuxtjs/pwa'],
 
-	optimizedImages     : {
-		optimizeImages : true
+	optimizedImages: {
+		optimizeImages: true
 	},
 
-	publicRuntimeConfig : {
-		baseURL : process.env.BASE_URL || url
+	publicRuntimeConfig: {
+		baseURL: process.env.BASE_URL || url
 	},
 
-	generate            : {
-		fallback : true
+	generate: {
+		fallback: true
 	},
 
-	image               : {
+	image: {
 		// Options
 	},
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules             : [ '@nuxtjs/bulma', '@nuxt/content', '@nuxt/image', '@nuxtjs/style-resources' ],
+	modules: ['@nuxtjs/bulma', '@nuxt/content', '@nuxt/image', '@nuxtjs/style-resources'],
 
-	content             : {
-		markdown : {
-			prism : {
+	content: {
+		markdown: {
+			prism: {
 				// https://github.com/PrismJS/prism-themes
-				theme : 'prism-themes/themes/prism-atom-dark.css'
+				theme: 'prism-themes/themes/prism-atom-dark.css'
 			}
 		}
 	},
 
-	styleResources      : {
-		scss : [ './assets/scss/*.scss' ]
+	styleResources: {
+		scss: ['./assets/scss/*.scss']
 	},
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
-	build               : {
-		postcss : {
-			preset : {
-				features : {
-					customProperties : false
+	build: {
+		postcss: {
+			preset: {
+				features: {
+					customProperties: false
 				}
 			}
 		}
