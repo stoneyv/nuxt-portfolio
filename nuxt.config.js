@@ -31,7 +31,7 @@ export default {
 
 	generate: {
 		fallback: true,
-		dir: 'dist'
+		dir: 'dist/'
 	},
 
 	image: {
