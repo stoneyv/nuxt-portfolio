@@ -1,4 +1,4 @@
-const url = 'https://stoneyv.github.io';
+const url = '/rockourdata.netlify.app/';
 
 export default {
 	head: {
@@ -9,10 +9,6 @@ export default {
 
 	// Target (https://go.nuxtjs.dev/config-target)
 	target: 'static',
-
-	router: {
-		base: '/stoneyv.github.io/'
-	},
 
 	// Global CSS (https://go.nuxtjs.dev/config-css)
 	css: ['~assets/scss/colors.scss'],
@@ -34,7 +30,8 @@ export default {
 	},
 
 	generate: {
-		fallback: true
+		fallback: true,
+		dir: 'dist'
 	},
 
 	image: {

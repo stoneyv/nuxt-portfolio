@@ -6,15 +6,13 @@
       <article class="section container">
         <div class="max-width-78ch">
           <h1 class="section-title is-flex is-align-items-center">
-            <img src="~/assets/images/me.jpg" class="me" />
+            <img src="~/assets/images/me_564x640.jpg" class="me" />
             <span style="margin-left: 1rem">Data Specialist</span>
           </h1>
-          <div class="body-transition-container">
-            <p>
-              I create data pipelines, predictive models,
-              and reporting with high quality visualizations. 
-            </p>
-          </div>
+          <p>
+            I create data pipelines, predictive models, and reporting with high
+            quality visualizations.
+          </p>
         </div>
         <!-- TITLE -->
         <h2 class="section-title">Projects</h2>
